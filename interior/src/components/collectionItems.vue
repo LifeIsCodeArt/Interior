@@ -20,13 +20,16 @@ const props = defineProps({
            </div>
         </div>
 
-        <div class="font-nunito font-semibold text-[1.12rem] mt-[2rem] leading-[1.75rem] text-[#282828]">
+        <div class="font-nunito font-semibold text-[1.12rem] mt-[3rem] leading-[1.75rem] text-[#282828]">
           {{item.label}}
         </div>
 
-        <div class="font-nunito mt-[0.6rem] font-normal text-[0.94rem] leading-[1.75rem] text-[#1E1D1D] flex">
-            <p class="text-[#737373] mr-[0.8rem]" v-show="item.oldPrice"><s>{{item.oldPrice}}</s></p>
-            {{item.currentPrice}}
+        <div class="font-nunito mt-[0.6rem] font-normal text-[0.94rem] leading-[1.75rem] text-[#1E1D1D] flex justify-between">
+            <div class="flex">
+                <p class="text-[#737373] mr-[0.8rem]" v-show="item.oldPrice"><s>{{item.oldPrice}}</s></p>
+                {{item.currentPrice}}
+            </div>
+            <img src="../assets/icons/Group%2018.svg" alt="" class="">
         </div>
 
   </div>

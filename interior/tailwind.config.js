@@ -11,6 +11,8 @@ module.exports = {
       },
       backgroundImage: {
         'interiorImage': 'url(@/assets/images/main-picture.png)',
+        'clientsImage': 'url(@/assets/images/Clients%20Image.png)',
+        'footerImage': 'url(@/assets/images/bg-footer.png)',
       },
     }
   },

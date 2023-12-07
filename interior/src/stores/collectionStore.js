@@ -7,22 +7,22 @@ export const useCollectionItemsStore = defineStore('CollectionItemsStore', () =>
             id:1,
             label: 'Blue chair',
             imageLink: '../src/assets/images/Items%20Collection/item_1.svg',
-            currentPrice: '15.00$',
-            oldPrice: '15.00$'
+            currentPrice: '25.00$',
+            oldPrice: ""
         },
         {
             id:2,
             label: 'Blue chair',
             imageLink: '../src/assets/images/Items%20Collection/item_2.svg',
-            currentPrice: '15.00$',
-            oldPrice: '15.00$'
+            currentPrice: '25.00$',
+            oldPrice: '45.00$'
         },
         {
             id:3,
             label: 'Coral vase',
             imageLink: '../src/assets/images/Items%20Collection/item_3.svg',
-            currentPrice: '15.00$',
-            oldPrice: '15.00$'
+            currentPrice: '75.00$',
+            oldPrice: '115.00$'
         },
         {
             id:4,
