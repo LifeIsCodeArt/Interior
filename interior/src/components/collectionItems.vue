@@ -10,7 +10,7 @@ const props = defineProps({
 
 
 <template>
-  <div class="flex flex-col mb-[3rem]">
+  <div class="flex flex-col mb-[3rem] max-xl:w-[250px]">
       <div class="w-[16rem] h-[17.12rem] bg-[#F7F7F7]">
            <div class="h-full flex justify-center items-center">
               <img :src="item.imageLink" alt="" class="">

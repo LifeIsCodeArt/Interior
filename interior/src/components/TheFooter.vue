@@ -4,6 +4,7 @@
 
 
 <template>
+<div class="margin">
   <div class="mt-[5rem] flex-col">
       <div class="container flex items-center justify-center bg-footerImage margin">
           <div class="flex flex-col items-center w-[27.23rem]">
@@ -32,7 +33,7 @@
 
       </div>
 
-      <div class="margin w-[90rem] h-[3.68rem] px-[10.31rem] flex justify-between items-center">
+      <div class="margin h-[3.68rem] px-[10.31rem] flex justify-between items-center">
         <div class="font-nunito font-thin text-[#424242] text-[0.75rem] leading-[1.75rem]">
             Copyright 2022 - Designed & Developed by Frenify
         </div>
@@ -42,8 +43,8 @@
         </div>
       </div>
 
-
   </div>
+</div>
 </template>
 
 <style scoped>
@@ -51,8 +52,9 @@
   width: 90rem;
   height: 26.4rem;
 }
+
 .margin{
+  width: 90rem;
   margin: 0 auto;
 }
-
 </style>

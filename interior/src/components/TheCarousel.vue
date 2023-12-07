@@ -11,7 +11,7 @@
 w
 <template>
 
-    <div class="w-[21.9rem] h-[28rem] bg-[#E5E6E6] pl-[1.94rem] pt-[3.1rem]">
+    <div class="w-[21.9rem] h-[28rem] bg-[#E5E6E6] pl-[1.94rem] pt-[3.1rem] max-xl:my-[3rem]">
         <div class="font-nunito text-[1.875rem] mb-[1rem]  h-[5rem]" v-html="item.label.replaceAll('\n', `<br>`)">
 
         </div>
