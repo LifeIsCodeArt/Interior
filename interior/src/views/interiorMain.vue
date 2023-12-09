@@ -30,8 +30,8 @@
 </script>
 
 <template>
-    <div class="margin h-auto">
-        <section class="container bg-interiorImage bg-no-repeat margin xl:bg-auto">
+    <div class="totalMargin w-[90rem] h-auto min-xl:m-0 max-2xl:min-w-[64rem]  max-sm:min-w-[34rem] max-xl:w-0 max-xl:m-0  border-2 border-red-400">
+        <section class="container bg-interiorImage bg-no-repeat margin lg:w-[60rem] max-2xl:min-w-[60rem] max-2xl:w-0 xl:bg-auto border-2 border-violet-400">
             <div class="w-[25.19rem] h-[19.3rem] pt-[10rem] ml-[10rem] relative pl-[2.6rem] pt-[3.1rem] flex flex-col max-xl:items-center md:justify-center md:items-center md:pr-0 sm:pr-[4.5rem]">
                 <div class="uppercase text-[#2C314B] text-[1rem] leading-[3.75rem] font-nunito font-thin max-xl:text-center">
                    INTERIOR
@@ -48,13 +48,13 @@
             </div>
         </section>
 
-        <section class="containerItems pt-[6rem]">
+        <section class="containerItems pt-[6rem] max-2xl:min-w-[60rem] xl:bg-auto">
 
-          <div class="flex justify-between w-full px-[10.3rem] max-xl:flex-col max-xl:justify-between max-xl:items-center">
+          <div class="flex justify-between w-full px-[10.3rem] max-xl:flex-col max-xl:justify-between max-xl:items-center max-xl:px-0 max-2xl:min-w-[60rem] xl:bg-auto">
               <TheCarousel v-for="item in carouselItems" :item="item" :key="item.id"></TheCarousel>
           </div>
 
-          <section class="mt-[7.1rem] px-[10.3rem]">
+          <section class="mt-[7.1rem] px-[10.3rem] totalMargin  max-sm:w-full border-2 border-green-400 max-2xl:min-w-[60rem] max-xl:w-0 ">
               <div class="flex items-center max-xl:justify-center">
                 <img src="../assets/icons/Line%2017.svg" alt="#" class="">
                   <p class="text-[1rem] text-[#9A6437] font-nunito leading-[3.75rem] ml-[0.6rem]">PROFESSIONAL TEAM</p>
@@ -91,18 +91,18 @@
                   </ul>
               </div>
 
-              <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2 max-xl:ml-[12rem]">
+              <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2">
                   <CollectionItems v-for="common in collectionItems" :key="common.id" :item="common"></CollectionItems>
               </div>
           </section>
 
           <section>
-              <div class="h-[43.75rem] bg-clientsImage flex flex-col items-center pt-[4.5rem] relative margin">
+              <div class="h-[43.75rem] bg-clientsImage flex flex-col items-center pt-[4.5rem] relative margin max-2xl:min-w-[60rem] max-xl:hidden border-2 border-green-400">
                 <div class="absolute top-0 w-full h-full popUpBackground"></div>
                 <div class="flex text-[#E0E0E0] text-[1rem] font-nunito font-normal leading-[3.75rem] z-10">
                     <img src="../assets/icons/Line%2018.svg" alt="" class="">
 
-                    WHAT PEOPLE SAY
+                        WHAT PEOPLE SAY
 
                     <img src="../assets/icons/Line%2018.svg" alt="" class="">
                 </div>
@@ -119,7 +119,7 @@
           </section>
 
           <section>
-              <div class="h-[108.5rem] flex flex-col pt-[6.63rem] px-[10.3rem]">
+              <div class="h-[68.5rem] w-full flex flex-col pt-[6.63rem] px-[10.3rem] max-xl:h-[108.5rem] max-xl:px-0 max-2xl:min-w-[60rem] border-2 border-green-400">
 
                   <div class="flex items-center max-xl:justify-center">
                       <img src="../assets/icons/Line%2017.svg" alt="#" class="">
@@ -132,60 +132,69 @@
                       <TheButton :text="'See More Product'" :button-bg="false"></TheButton>
                   </div>
 
-                  <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2 max-xl:ml-[12rem]">
+                  <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2 max-xl:ml-[10rem]">
                       <CollectionItems v-for="common in result" :key="common.id" :item="common"></CollectionItems>
                   </div>
 
                   <div class="py-[5.5rem] my-[4.4rem] h-[10.3rem] bg-black  flex items-center justify-between px-[3.2rem] font-nunito
-                              max-xl:flex-col  max-xl:h-[25.8rem]  max-xl:w-auto max-xl:justify-center max-xl:justify-center">
+                              max-xl:flex-col  max-xl:h-[25.8rem]  max-xl:w-auto max-xl:px-0 max-xl:justify-center max-sm:justify-between">
 
                       <!--<div class="bg-black w-[20rem] h-[30rem] flex items-center flex-col justify-center">-->
-                        <div class="bg-inherit text-white flex items-center">
+                        <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[10%] max-xl:w-full">
 
                           <div class="">
                               <img src="../assets/icons/Car_icon.svg" alt="" class="w-[2.93rem] h-[2.35rem]">
                           </div>
 
                           <div class="flex flex-col ml-[0.6rem]">
-                              <h3 class="text-[1.25rem] leading-[1.75rem] font-normal">
+                              <h3 class="text-[1.25em] leading-[1.75rem] font-normal">
                                  Free Shipping
                               </h3>
-                              <p class="text-[0.94rem] leading-[1.75rem] font-normal">
+                              <p class="text-[0.94em] leading-[1.75em] font-normal">
                                 Capped at $319 per order
                               </p>
                           </div>
 
                       </div>
 
-                      <div class="">
+                      <div class="max-xl:w-full w-[0.4rem] max-xl:pl-[30%]">
+
                           <img src="../assets/icons/Line_22.svg" alt="" class="">
+
                       </div>
 
-                      <div class="bg-inherit text-white flex items-center">
+                      <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[30%] max-xl:w-full">
 
-                    <div class="">
-                      <img src="../assets/icons/Lock_icon.svg" alt="" class="">
-                    </div>
+                      <div class="">
 
-                    <div class="flex flex-col ml-[0.6rem]">
-                      <h3 class="text-[1.25rem] leading-[1.75em] font-normal">
-                        Free Shipping
-                      </h3>
-                      <p class="text-[0.94rem] leading-[1.75em] font-normal">
-                        Capped at $319 per order
-                      </p>
-                    </div>
+                          <img src="../assets/icons/Lock_icon.svg" alt="" class="">
+
+                      </div>
+
+
+                      <div class="flex flex-col ml-[0.6rem]">
+                          <h3 class="text-[1.25rem] leading-[1.75em] font-normal">
+                              Free Shipping
+                          </h3>
+                          <p class="text-[0.94rem] leading-[1.75em] font-normal">
+                              Capped at $319 per order
+                          </p>
+                      </div>
 
                   </div>
 
-                    <div class="">
-                      <img src="../assets/icons/Line_22.svg" alt="" class="">
+                    <div class="max-xl:w-full w-[0.4rem] max-xl:pl-[50%]">
+
+                        <img src="../assets/icons/Line_22.svg" alt="" class="">
+
                     </div>
 
-                    <div class="bg-inherit text-white flex items-center">
+                    <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[50%] max-xl:w-full">
 
                           <div class="text-[1.25rem] leading-[1.75rem] font-normal">
+
                               <img src="../assets/icons/Screen_icon.svg" alt="" class="">
+
                           </div>
 
                           <div class="flex flex-col ml-[0.6rem]">
@@ -199,29 +208,36 @@
 
                         </div>
 
-                        <div class="">
+                        <div class="max-xl:w-full w-[0.4rem] max-xl:pl-[70%]">
+
                             <img src="../assets/icons/Line_22.svg" alt="" class="">
+
                         </div>
 
-                        <div class="bg-inherit text-white flex items-center">
 
-                          <div class="">
-                              <img src="../assets/icons/Mark_icon.svg" alt="" class="">
-                          </div>
+                        <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[70%] max-xl:w-full">
+
+                            <div class="">
+
+                                <img src="../assets/icons/Mark_icon.svg" alt="" class="">
+
+                            </div>
 
                           <div class="flex flex-col ml-[0.6rem]">
-                              <h3 class="text-[1.25rem] leading-[1.75rem] font-normal">
+
+                            <h3 class="text-[1.25rem] leading-[1.75rem] font-normal">
                                 Free Shipping
-                              </h3>
-                              <p class="text-[0.94rem] leading-[1.75rem] font-normal">
+                            </h3>
+                            <p class="text-[0.94rem] leading-[1.75rem] font-normal">
                                 Capped at $319 per order
-                              </p>
+                            </p>
+
                           </div>
 
                         </div>
                       </div>
                   </div>
-                  <div class="flex flex-col items-center max-xl:h-auto">
+                  <div class="flex flex-col items-center max-xl:h-auto max-2xl:min-w-[60rem] max-xl:m-0 border-2  border-green-400">
                       <div class="flex text-[#9A6437] max-xl:h-auto w-[20rem] z-10 ">
                           <img src="../assets/icons/Line%2017_brown.svg" alt="" class="">
                           <p class=" text-[1rem] font-nunito font-normal leading-[3.75rem] mx-[0.75rem]">
@@ -258,8 +274,14 @@
         width: 90rem;
         margin: 0 auto;
       }
+      .totalMargin{
+        margin: 0 auto;
+      }
       .popUpBackground{
         background: rgba(0, 0, 0, 0.39);
         z-index: 1;
+      }
+      .unwrap{
+        margin: 0 0 0 0;
       }
       </style>

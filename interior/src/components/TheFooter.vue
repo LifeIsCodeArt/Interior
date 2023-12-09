@@ -4,9 +4,9 @@
 
 
 <template>
-<div class="margin">
-  <div class="mt-[5rem] flex-col">
-      <div class="container flex items-center justify-center bg-footerImage margin">
+<div class="margin min-w-[90rem] border-4 max-xl:min-w-[64rem] max-2xl:m-0 max-sm:min-w-[34rem]  border-green-400 flex items-center justify-center">
+  <div class="mt-[5rem] min-w-[90rem]  margin max-xl:min-w-[64rem] max-2xl:m-0 flex-col ">
+      <div class="container border-4 border-black flex items-center justify-center bg-footerImage margin max-2xl:w-0 max-2xl:min-w-full max-2xl:m-0">
           <div class="flex flex-col items-center w-[27.23rem]">
 
             <div class="flex">
@@ -33,7 +33,7 @@
 
       </div>
 
-      <div class="margin h-[3.68rem] px-[10.31rem] flex justify-between items-center">
+      <div class="margin h-[3.68rem] px-[10.31rem] flex justify-between items-center  max-xl:px-0">
         <div class="font-nunito font-thin text-[#424242] text-[0.75rem] leading-[1.75rem]">
             Copyright 2022 - Designed & Developed by Frenify
         </div>
@@ -49,12 +49,10 @@
 
 <style scoped>
 .container{
-  width: 90rem;
   height: 26.4rem;
 }
 
 .margin{
-  width: 90rem;
   margin: 0 auto;
 }
 </style>
