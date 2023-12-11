@@ -10,8 +10,8 @@
 
 <template>
 
-<div class="margin min-w-[90rem] border-4 max-xl:min-w-[64rem] max-sm:  border-green-400">
-    <div class="bg-[#D3CBC5] container px-[10.5rem] flex items-center justify-between border border-amber-500 max-xl:min-w-[59.8rem] max-xl:px-2">
+<div class="margin min-w-[90rem] border-4 max-xl:min-w-[64rem] max-sm:min-w-[39rem]  border-green-400">
+    <div class="bg-[#D3CBC5] container w-[90rem] px-[10.5rem] flex items-center justify-between border border-amber-500 max-xl:min-w-[59.8rem] max-xl:px-2 max-sm:w-0 max-sm:min-w-[38.87rem]">
         <div class="flex justify-center items-center">
             <img src="../assets/icons/Group.svg" alt="" class="mr-[0.5rem] w-[1.95rem] h-[2.185rem]">
             <p class="text-[1rem] leading-[3.75rem] tracking-[0.035rem] font-oswald">interior</p>
@@ -35,7 +35,6 @@
 
 <style scoped>
 .container{
-  width: 90rem;
   margin: 0 auto;
   max-height: 5rem;
 }

@@ -30,9 +30,9 @@
 </script>
 
 <template>
-    <div class="totalMargin w-[90rem] h-auto min-xl:m-0 max-2xl:min-w-[64rem]  max-sm:min-w-[34rem] max-xl:w-0 max-xl:m-0  border-2 border-red-400">
-        <section class="container bg-interiorImage bg-no-repeat margin lg:w-[60rem] max-2xl:min-w-[60rem] max-2xl:w-0 xl:bg-auto border-2 border-violet-400">
-            <div class="w-[25.19rem] h-[19.3rem] pt-[10rem] ml-[10rem] relative pl-[2.6rem] pt-[3.1rem] flex flex-col max-xl:items-center md:justify-center md:items-center md:pr-0 sm:pr-[4.5rem]">
+    <div class="totalMargin w-[90rem] h-auto min-xl:m-0 max-2xl:min-w-[64rem]  max-sm:min-w-[39rem] max-xl:w-0 max-xl:m-0  border-2 border-red-400">
+        <section class="container totalMargin bg-interiorImage bg-no-repeat  w-[90rem] lg:w-[60rem] max-2xl:min-w-[60rem] max-2xl:w-0 xl:bg-auto max-sm:min-w-[39rem] max-sm:w-0 border-2 border-violet-400">
+            <div class="w-[25.19rem] h-[19.3rem] pt-[10rem] ml-[10rem] relative pl-[2.6rem] pt-[3.1rem] flex flex-col max-xl:items-center md:justify-center md:items-center md:pr-0 sm:pr-[4.5rem] max-sm:ml-[5rem]">
                 <div class="uppercase text-[#2C314B] text-[1rem] leading-[3.75rem] font-nunito font-thin max-xl:text-center">
                    INTERIOR
                 </div>
@@ -48,13 +48,13 @@
             </div>
         </section>
 
-        <section class="containerItems pt-[6rem] max-2xl:min-w-[60rem] xl:bg-auto">
+        <section class="containerItems pt-[6rem] max-2xl:min-w-[60rem] xl:bg-auto max-sm:min-w-[39rem]">
 
-          <div class="flex justify-between w-full px-[10.3rem] max-xl:flex-col max-xl:justify-between max-xl:items-center max-xl:px-0 max-2xl:min-w-[60rem] xl:bg-auto">
+          <div class="flex justify-between w-full px-[10.3rem] max-xl:flex-col max-xl:justify-between max-xl:items-center max-xl:px-0 max-2xl:min-w-[60rem] xl:bg-auto max-sm:min-w-[39rem]">
               <TheCarousel v-for="item in carouselItems" :item="item" :key="item.id"></TheCarousel>
           </div>
 
-          <section class="mt-[7.1rem] px-[10.3rem] totalMargin  max-sm:w-full border-2 border-green-400 max-2xl:min-w-[60rem] max-xl:w-0 ">
+          <section class="mt-[7.1rem] px-[10.3rem] totalMargin  max-sm:w-full border-2 border-green-400 max-2xl:min-w-[60rem] max-xl:w-0 max-sm:min-w-[39rem] max-sm:px-0">
               <div class="flex items-center max-xl:justify-center">
                 <img src="../assets/icons/Line%2017.svg" alt="#" class="">
                   <p class="text-[1rem] text-[#9A6437] font-nunito leading-[3.75rem] ml-[0.6rem]">PROFESSIONAL TEAM</p>
@@ -63,7 +63,7 @@
               <div class="flex justify-between items-center mt-[1.3rem] mb-[2.12rem] max-xl:flex-col">
                   <p class="font-nunito font-normal text-[2.6rem] leading-[3.75rem] max-xl:mb-[2rem]">The Best New Arrivals</p>
 
-                  <ul class="flex justify-between w-[23.5rem] items-center">
+                  <ul class="flex justify-between w-[23.5rem] items-center max-sm:w-full max-sm:px-6">
 
                       <li :class="{'disabled:cursor-not-allowed text-white pointer-events-none bg-black font-semibold  pointer-events:none':activeSection === 1,
                                    'bg-inherit font-normal':activeSection !== 1}"
@@ -91,13 +91,13 @@
                   </ul>
               </div>
 
-              <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2">
+              <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2 max-sm:ml-6">
                   <CollectionItems v-for="common in collectionItems" :key="common.id" :item="common"></CollectionItems>
               </div>
           </section>
 
           <section>
-              <div class="h-[43.75rem] bg-clientsImage flex flex-col items-center pt-[4.5rem] relative margin max-2xl:min-w-[60rem] max-xl:hidden border-2 border-green-400">
+              <div class="h-[43.75rem] bg-clientsImage flex flex-col items-center pt-[4.5rem] relative margin max-2xl:min-w-[60rem] max-sm:min-w-[39rem] max-xl:hidden border-2 border-green-400">
                 <div class="absolute top-0 w-full h-full popUpBackground"></div>
                 <div class="flex text-[#E0E0E0] text-[1rem] font-nunito font-normal leading-[3.75rem] z-10">
                     <img src="../assets/icons/Line%2018.svg" alt="" class="">
@@ -119,28 +119,28 @@
           </section>
 
           <section>
-              <div class="h-[68.5rem] w-full flex flex-col pt-[6.63rem] px-[10.3rem] max-xl:h-[108.5rem] max-xl:px-0 max-2xl:min-w-[60rem] border-2 border-green-400">
+              <div class="h-[68.5rem] w-full flex flex-col pt-[6.63rem] px-[10.3rem] max-xl:h-[108.5rem] max-xl:px-0 max-2xl:min-w-[60rem] max-sm:min-w-[39rem] border-2 border-green-400">
 
                   <div class="flex items-center max-xl:justify-center">
                       <img src="../assets/icons/Line%2017.svg" alt="#" class="">
                       <p class="text-[1rem] text-[#9A6437] font-nunito leading-[3.75rem] ml-[0.6rem]">POPULAR PRODUCT</p>
                   </div>
 
-                  <div class="flex justify-between max-xl:justify-around max-xl:px-[4rem] items-center mt-[1.3rem] mb-[2.12rem]">
+                  <div class="flex justify-between max-xl:justify-around max-xl:px-[4rem] items-center mt-[1.3rem] mb-[2.12rem] max-sm:px-0">
                       <p class="font-nunito font-normal text-[2.6rem] leading-[3.75rem]">Top Special Product</p>
 
                       <TheButton :text="'See More Product'" :button-bg="false"></TheButton>
                   </div>
 
-                  <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2 max-xl:ml-[10rem]">
+                  <div class="grid grid-cols-4 gap-8 max-xl:grid-cols-2 max-xl:ml-[10rem] max-sm:gap-4 max-sm:grid-cols-2 max-sm:ml-6">
                       <CollectionItems v-for="common in result" :key="common.id" :item="common"></CollectionItems>
                   </div>
 
-                  <div class="py-[5.5rem] my-[4.4rem] h-[10.3rem] bg-black  flex items-center justify-between px-[3.2rem] font-nunito
-                              max-xl:flex-col  max-xl:h-[25.8rem]  max-xl:w-auto max-xl:px-0 max-xl:justify-center max-sm:justify-between">
+                  <div class="h-[10.3rem] bg-black  flex items-center justify-between py-[5.5rem] my-[4.4rem] px-[3.2rem] font-nunito
+                              max-xl:flex-col  max-xl:h-[25.8rem]  max-xl:w-auto max-xl:px-0 max-xl:justify-center max-sm:justify-around">
 
                       <!--<div class="bg-black w-[20rem] h-[30rem] flex items-center flex-col justify-center">-->
-                        <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[10%] max-xl:w-full">
+                        <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[10%] max-xl:w-full max-sm:pl-0">
 
                           <div class="">
                               <img src="../assets/icons/Car_icon.svg" alt="" class="w-[2.93rem] h-[2.35rem]">
@@ -189,7 +189,7 @@
 
                     </div>
 
-                    <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[50%] max-xl:w-full">
+                    <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[50%] max-xl:w-full max-sm:pl-[30%]">
 
                           <div class="text-[1.25rem] leading-[1.75rem] font-normal">
 
@@ -208,14 +208,14 @@
 
                         </div>
 
-                        <div class="max-xl:w-full w-[0.4rem] max-xl:pl-[70%]">
+                        <div class="max-xl:w-full w-[0.4rem] max-xl:pl-[70%] max-sm:pl-[67%]">
 
                             <img src="../assets/icons/Line_22.svg" alt="" class="">
 
                         </div>
 
 
-                        <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[70%] max-xl:w-full">
+                        <div class="bg-inherit text-white flex items-center w-auto max-xl:pl-[70%] max-xl:w-full  max-sm:pl-[60%]">
 
                             <div class="">
 
@@ -237,7 +237,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="flex flex-col items-center max-xl:h-auto max-2xl:min-w-[60rem] max-xl:m-0 border-2  border-green-400">
+                  <div class="flex flex-col items-center max-xl:h-auto max-2xl:min-w-[60rem] max-xl:m-0 max-sm:min-w-[39rem] border-2  border-green-400">
                       <div class="flex text-[#9A6437] max-xl:h-auto w-[20rem] z-10 ">
                           <img src="../assets/icons/Line%2017_brown.svg" alt="" class="">
                           <p class=" text-[1rem] font-nunito font-normal leading-[3.75rem] mx-[0.75rem]">
