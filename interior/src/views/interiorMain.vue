@@ -30,8 +30,8 @@
 </script>
 
 <template>
-    <div class="totalMargin w-[90rem] h-auto min-xl:m-0 max-2xl:min-w-[64rem]  max-sm:min-w-[39rem] max-xl:w-0 max-xl:m-0  border-2 border-red-400">
-        <section class="container totalMargin bg-interiorImage bg-no-repeat  w-[90rem] lg:w-[60rem] max-2xl:min-w-[60rem] max-2xl:w-0 xl:bg-auto max-sm:min-w-[39rem] max-sm:w-0 border-2 border-violet-400">
+    <div class="totalMargin w-[90rem] h-auto min-xl:m-0 max-xl:min-w-[64rem]  max-sm:min-w-[39rem] max-xl:w-0 max-xl:m-0">
+        <section class="container totalMargin bg-interiorImage bg-no-repeat  max-xl:w-[90rem] max-lg:w-[60rem] max-2xl:min-w-[64rem] max-xl:w-0 xl:bg-auto max-sm:min-w-[39rem] max-sm:w-0">
             <div class="w-[25.19rem] h-[19.3rem] pt-[10rem] ml-[10rem] relative pl-[2.6rem] pt-[3.1rem] flex flex-col max-xl:items-center md:justify-center md:items-center md:pr-0 sm:pr-[4.5rem] max-sm:ml-[5rem]">
                 <div class="uppercase text-[#2C314B] text-[1rem] leading-[3.75rem] font-nunito font-thin max-xl:text-center">
                    INTERIOR
@@ -54,7 +54,7 @@
               <TheCarousel v-for="item in carouselItems" :item="item" :key="item.id"></TheCarousel>
           </div>
 
-          <section class="mt-[7.1rem] px-[10.3rem] totalMargin  max-sm:w-full border-2 border-green-400 max-2xl:min-w-[60rem] max-xl:w-0 max-sm:min-w-[39rem] max-sm:px-0">
+          <section class="mt-[7.1rem] px-[10.3rem] totalMargin  max-sm:w-full max-2xl:min-w-[60rem] max-xl:w-0 max-sm:min-w-[39rem] max-sm:px-0">
               <div class="flex items-center max-xl:justify-center">
                 <img src="../assets/icons/Line%2017.svg" alt="#" class="">
                   <p class="text-[1rem] text-[#9A6437] font-nunito leading-[3.75rem] ml-[0.6rem]">PROFESSIONAL TEAM</p>
@@ -97,7 +97,7 @@
           </section>
 
           <section>
-              <div class="h-[43.75rem] bg-clientsImage flex flex-col items-center pt-[4.5rem] relative margin max-2xl:min-w-[60rem] max-sm:min-w-[39rem] max-xl:hidden border-2 border-green-400">
+              <div class="h-[43.75rem] bg-clientsImage flex flex-col items-center pt-[4.5rem] relative margin max-2xl:min-w-[60rem] max-sm:min-w-[39rem] max-xl:hidden">
                 <div class="absolute top-0 w-full h-full popUpBackground"></div>
                 <div class="flex text-[#E0E0E0] text-[1rem] font-nunito font-normal leading-[3.75rem] z-10">
                     <img src="../assets/icons/Line%2018.svg" alt="" class="">
@@ -119,7 +119,7 @@
           </section>
 
           <section>
-              <div class="h-[68.5rem] w-full flex flex-col pt-[6.63rem] px-[10.3rem] max-xl:h-[108.5rem] max-xl:px-0 max-2xl:min-w-[60rem] max-sm:min-w-[39rem] border-2 border-green-400">
+              <div class="h-[68.5rem] w-full flex flex-col pt-[6.63rem] px-[10.3rem] max-xl:h-[108.5rem] max-xl:px-0 max-2xl:min-w-[60rem] max-sm:min-w-[39rem]">
 
                   <div class="flex items-center max-xl:justify-center">
                       <img src="../assets/icons/Line%2017.svg" alt="#" class="">
@@ -237,7 +237,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="flex flex-col items-center max-xl:h-auto max-2xl:min-w-[60rem] max-xl:m-0 max-sm:min-w-[39rem] border-2  border-green-400">
+                  <div class="flex flex-col items-center max-xl:h-auto max-2xl:min-w-[60rem] max-xl:m-0 max-sm:min-w-[39rem]">
                       <div class="flex text-[#9A6437] max-xl:h-auto w-[20rem] z-10 ">
                           <img src="../assets/icons/Line%2017_brown.svg" alt="" class="">
                           <p class=" text-[1rem] font-nunito font-normal leading-[3.75rem] mx-[0.75rem]">

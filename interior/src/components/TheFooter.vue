@@ -4,9 +4,9 @@
 
 
 <template>
-<div class="margin min-w-[90rem] border-4 max-xl:min-w-[64rem] max-2xl:m-0 max-sm:min-w-[39rem] border-green-400 flex items-center justify-center">
+<div class="margin min-w-[90rem] border-4 max-xl:min-w-[64rem] max-2xl:m-0 max-sm:min-w-[39rem] flex items-center justify-center">
   <div class="mt-[5rem] min-w-[90rem] flex-col margin max-xl:min-w-[64rem] max-2xl:m-0 max-sm:min-w-[39rem]">
-      <div class="container border-4 border-black flex items-center justify-center bg-footerImage margin max-2xl:w-0 max-2xl:min-w-full max-2xl:m-0">
+      <div class="container flex items-center justify-center bg-footerImage margin max-2xl:w-0 max-2xl:min-w-full max-2xl:m-0">
           <div class="flex flex-col items-center w-[27.23rem]">
 
             <div class="flex">
